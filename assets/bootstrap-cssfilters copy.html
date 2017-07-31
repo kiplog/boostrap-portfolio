@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+    <style>
+
+    .navbar {
+    margin-bottom: 0px;
+    }
+        .jumbotron {
+    margin: 0;
+    height: 100vh;
+    background:
+linear-gradient(#ffa949, transparent 90%),
+linear-gradient(0deg, #fff, transparent),
+#ffa949
+ url('img/fudog.jpg') no-repeat 40% 0;
+
+ background-attachment: fixed;
+    }
+        .jumbotron p{
+        color: white;
+        }
+
+        .media img {
+        display: block;
+        border: 1px solid red;
+        height: 64px;
+        }
+
+.thumb:nth-child(2) img {
+  filter: blur(10px);
+    animation: blurry 5s infinite linear;
+}
+.thumb:nth-child(3) img {
+  filter: brightness(.5);
+}
+.thumb:nth-child(4) img {
+  filter: contrast(2);
+}
+.thumb:nth-child(5) img {
+  filter: grayscale(1);
+}
+
+.thumb:nth-child(6) img {
+  filter: invert(1);
+}
+
+.thumb:nth-child(7) img {
+  filter: saturate(.5);
+}
+
+.thumb:nth-child(8) img {
+  filter: sepia(1);
+}
+
+.thumb:nth-child(9) img {
+  filter: drop-shadow(1px 1px 1px #333 );
+  /*needs a png*/
+}
+
+.thumb:nth-child(10) img {
+  filter: hue-rotate(60deg);
+  animation: huerot 5s infinite linear;
+}
+
+
+@keyframes huerot {
+
+0% {
+  filter: hue-rotate(0deg);
+}
+100% {
+  filter: hue-rotate(360deg);
+}
+
+}
+
+@keyframes blurry {
+
+0% {
+  filter: blur(0px);
+}
+100% {
+  filter: blur(8px);
+}
+
+}
+
+
+
+    </style>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="jumbotron">
+      <div class="container">
+        <h1>The Fu Dogs of Central Illinois</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#mainthumbs" role="button">scroll down &raquo;</a></p>
+
+
+      </div>
+    </div>
+
+
+      <!-- Page Content -->
+    <div class="container" id="mainthumbs">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Thumbnail Gallery</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">blur.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">brightness</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">contrast</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">grayscale</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">invert</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">saturation</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">sepia</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">This is a fu dog in Central Illinois.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">This is a fu dog in Central Illinois.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">This is a fu dog in Central Illinois.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive img-circle" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">This is a fu dog in Central Illinois.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+                <p class="caption">This is a fu dog in Central Illinois.</p>
+            </div>
+        </div>
+
+
+        <hr>
+
+ <div class="container" id="mainthumbs">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Thumbnail Gallery</h1>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/fudog.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12 thumb">
+
+                <p class="caption">This is a fu dog in Central Illinois.</p>
+            </div>
+
+        </div>
+ </div>
+
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img src="img/fudog.jpg" alt="">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+   Stuf that describes it
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+   Stuff that describes it
+  </div>
+    <div class="media-right">
+    <a href="#">
+      <img src="img/fudog.jpg" alt="">
+    </a>
+  </div>
+</div>
+
+
+
+
+
+ <div class="container" >
+
+<div class="row row-spaced">
+
+
+  <div class="col-md-7 ">
+     <img class="img-responsive" src="img/fudog.jpg" alt="">
+  </div>
+
+  <div class="col-md-4 col-md-offset-1">
+    <h3>Fudog</h3>
+    <p class="">Designed to be the perfect starting point&nbsp;for any dashboard or admin site. Charts,&nbsp;graphs, sortable tables,&nbsp;and more than a dozen other new&nbsp;components included.</p>
+    <div class="btn-set">
+
+      <button class="btn" data-action="buy" data-product-id="3943175813">
+        Name this dog
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<div class="row row-spaced">
+
+  <div class="jumbo-list-item-screenshot col-md-7 col-md-push-4 col-md-offset-1">
+    <img class="img-responsive" src="img/fudog.jpg" alt="">
+  </div>
+
+  <div class="jumbo-list-item-text col-md-4 col-md-pull-8">
+    <h3><a href="/products/marketing">Marketing</a></h3>
+    <p class="jumbo-list-description">Building beautiful marketing sites is easier than ever. Over 15&nbsp;new CSS and JS components&nbsp;adapt to any brand or style.</p>
+    <div class="btn-set">
+      <a class="btn" href="/products/marketing">Preview</a>
+      <button class="btn" data-action="buy" data-product-id="4465241797">
+        Buy $99
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<div class="row row-spaced">
+  <div class="col-md-7 ">
+  <img class="img-responsive" src="img/fudog.jpg" alt="">
+  </div>
+
+  <div class="jumbo-list-item-text col-md-4 col-md-offset-1">
+    <h3><a href="/products/application">Application</a></h3>
+    <p class="jumbo-list-description">Building robust web apps is simple with timelines, profiles, notifications, messages, activity, and new utility classes.</p>
+    <div class="btn-set">
+      <a class="btn" href="/products/application">Preview</a>
+      <button class="btn" data-action="buy" data-product-id="1007240140">
+        Buy $99
+      </button>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+        <hr>
+
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery1.11.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+
+// where is lazyload? is it default in the BS package?
+
+    $("img.lazy").lazyload({
+    effect : "fadeIn",
+    threshold : 10,
+    placeholder : "img/placeholder.png"
+});
+
+// the primary button should scroll the page down to a specified point
+
+    $('.btn-primary').click(function(){
+
+    var clickedId = $(this).attr('href');
+    var scrollPos = $(clickedId).position().top;
+
+    $('body').animate({
+    scrollTop: scrollPos
+    }, 3000);
+    return false;
+
+
+// waht was this supposed to do
+    $('body')
+
+    });
+
+    </script>
+  </body>
+</html>

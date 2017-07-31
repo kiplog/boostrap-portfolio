@@ -1,0 +1,32 @@
+
+div {
+  border: 0px solid black;
+}
+
+.jumbotron {
+background: url(../img/waterbg.jpg);
+background-size: cover;
+}
+
+
+.jumbotron h1,
+.jumbotron p {
+  color: rgba(100%, 100%, 100%, .7);
+  /*-webkit-text-stroke: 1px black;*/
+}
+
+
+.col-sm-4  {
+}
+
+
+.thumbnail {
+
+}
+.tilty .thumbnail {
+  transition: all .3s ease;
+}
+
+.tilty .thumbnail:hover {
+  transform: rotate(3deg) scale(1.1);
+}
