@@ -260,7 +260,7 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script src="js/jquery.min.js"></script>
 
   <script>
 
@@ -276,12 +276,59 @@
   });
 
 
-  $('body').scrollspy({ target: '#navbar-example' })
+  // $('body').scrollspy({ target: '#navbar-example' })
 
-  $('.carousel').carousel({
-    interval: 5000,
-    pause: null
-  })
+  // $('.carousel').carousel({
+  //   interval: 0,
+  //   pause: "hover"
+  // })
+
+
+
+
+
+  // 05. Scroll
+
+  //
+
+
+    var delaytime = 200;
+    $('.thumb').hide();
+
+
+  $(window).bind('scroll', function() {
+  whenScroll();
+  });
+
+  function gridFades() {
+
+  var opac = .1;
+  $('thumb').each(function(){
+  	var bgcol = 'rgba(0, 0, 0, ' + opac + ')';
+  	$(this).css('background-color', bgcol);
+  	opac = opac + .1;
+  	console.log(bgcol);
+  });
+
+
+  $('.thumb').each(function(){
+  	$(this).delay(delaytime).show(200);
+  	delaytime += 200;
+  });
+
+  } // end grid fades
+
+
+  function whenScroll() {
+  var scrolled = $(window).scrollTop();
+
+  if (scrolled > 990){
+           gridFades();
+           console.log(scrolled);
+  }
+
+  } // end whenScroll
+
 
   </script>
 
