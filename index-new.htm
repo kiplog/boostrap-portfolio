@@ -15,12 +15,6 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
 
-
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -44,13 +38,17 @@
       <div class="container">
       <h1>Hello, world!</h1>
       <p>Here's my stuff.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      <p><a class="btn btn-primary btn-lg page-scroll" href="#page-contact" role="button">Call me, please.</a></p>
       </div>
     </div>
 
 
 <div class="container">
   <div class="row fudog">
+
+    <div class="col-sm-12">
+      <h1>Gallery</h1>
+    </div>
 
     <div class="col-sm-4 thumb">
 
@@ -112,15 +110,46 @@
 
   </div>
 
+</div>
+<!-- container closes -->
 
+
+<!-- contact open -->
+
+<div class="jumbotron page-contact" id="page-contact">
+
+<div class="container cover-title">
+
+<h1>Contact me</h1>
+<p>I'm willing to work for beer</p>
+
+<form action="formtoemail.php">
+
+<div class="input-group">
+
+  <input type="email" required class="form-control"
+  placeholder="Email Address">
+
+  <textarea name="feedback" id="" ></textarea>
+
+  <input class="btn btn-primary btn-lg contact-submit" type="submit" value="contact me!">
 
 </div>
 
+</form>
+
+</div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
 <script>
-
-
 
 //jQuery for page scrolling feature - should use jQuery Easing plugin
 $(function() {
@@ -137,8 +166,7 @@ $(function() {
 
 </script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
